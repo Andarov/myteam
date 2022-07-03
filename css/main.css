@@ -1,11 +1,50 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --midnight-green: #014E56;
+    --light--red: #F67E7E;
+    --white: #fff;
+    --light-blue: #79C8C7;
+    --police-blue: #2C6269;
+    --sacramento-state-green:  #012F34;
+    --dark-green:  #002529;
 }
 
 /* FONTS */
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/livvic-v13-latin-500.woff2") format("woff2"),
+         url("../fonts/livvic-v13-latin-500.woff") format("woff");
+    font-display: swap;
+}
 
+@font-face {
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 500;
+    src: url("../fonts/livvic-v13-latin-500italic.woff2") format("woff2"),
+         url("../fonts/livvic-v13-latin-500italic.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/livvic-v13-latin-600.woff2") format("woff2"),
+         url("../fonts/livvic-v13-latin-600.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/livvic-v13-latin-700.woff2") format("woff2"),
+         url("../fonts/livvic-v13-latin-700.woff") format("woff");
+    font-display: swap;
+}
+  
 
 html {
     height: 100%;
@@ -20,7 +59,7 @@ html {
 }
 
 *:focus {
-    outline: 3px dashed var(--text-color);
+    outline: 3px dashed var(--white);
     outline-offset: 3px;
 }
 
@@ -28,13 +67,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: var(--body-bg-color);
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--text-color);
+    background-color: var(--midnight-green);
+    font-family: "Livvic", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--white);
 }
 
 img {
@@ -49,7 +87,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -58,4 +96,96 @@ a {
 
 .main-content {
     flex-grow: 1;
+}
+
+/* Header */
+.site-header {
+    padding-top: 73px;
+    padding-bottom: 73px;
+}
+
+.site-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 80px;
+}
+
+.logo-link:hover {
+    opacity: 0.6;
+}
+
+.logo {
+    width: 160px;
+    height: 40px;
+}
+
+.sitenav {
+    margin-right: auto;
+}
+
+.sitenav__items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sitenav__item {
+    flex-shrink: 0;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+.sitenav__link {
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+    transition: color 0.4s ease;
+}
+
+.sitenav__link:hover {
+    color: var(--light--red);
+}
+
+.btn {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding: 9px 33px 11px 32px;
+    transition: color 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.btn--white {
+    border: 2px solid var(--white);
+}
+
+.btn--white:hover {
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+.btn--black {
+    border: 2px solid var(--sacramento-state-green);
+    color: var(--sacramento-state-green);
+}
+
+.btn--black:hover {
+    background-color: var(--sacramento-state-green);
+    color: var(--white);
 }
