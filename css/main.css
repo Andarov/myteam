@@ -6,6 +6,7 @@
     --police-blue: #2C6269;
     --sacramento-state-green:  #012F34;
     --dark-green:  #002529;
+    --reviews-bg: #004047;
 }
 
 /* FONTS */
@@ -322,4 +323,110 @@ a {
     position: absolute;
     left: calc(50% + 618px);
     bottom: 0;
+}
+
+/* Reviews */
+.reviews {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--reviews-bg);
+}
+
+.reviews__bg-left {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 720px);
+}
+
+.reviews__bg-right {
+    position: absolute;
+    right: calc(50% - 720px);
+    bottom: -113px;
+    z-index: 1;
+}
+
+.reviews__heading {
+    width: 100%;
+    max-width: 932px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.reviews__blue-text {
+    color: var(--light-blue);
+}
+
+.reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.reviews__item {
+    position: relative;
+    z-index: 555;
+    width: 350px;
+    padding-top: 36px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews__scope {
+    position: absolute;
+    top: 0;
+    width: 67px;
+    height: 56px;
+    z-index: -555;
+}
+
+.reviews__item-text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.reviews__item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--light-blue);
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.reviews__item-profession {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white);
+}
+
+.reviews__item-img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.cta {
+    z-index: 5555;
+    background-color: var(--light--red);
 }
