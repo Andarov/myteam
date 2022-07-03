@@ -320,7 +320,7 @@ a {
     margin: 0;
 }
 
-.features__green-circle {
+.feature__green-circle {
     position: absolute;
     left: calc(50% + 618px);
     bottom: 0;
