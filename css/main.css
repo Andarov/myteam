@@ -189,3 +189,69 @@ a {
     background-color: var(--sacramento-state-green);
     color: var(--white);
 }
+
+/* Hero */
+.hero {
+    position: relative;
+    z-index: 555;
+    padding-top: 56px;
+    padding-bottom: 250px;
+}
+
+.hero__black-circle {
+    position: absolute;
+    left: calc(50% - 822px);
+    top: 55px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__heading {
+    width: 620px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.red-text {
+    color: var(--light--red);
+}
+
+.hero__content {
+    width: 445px;
+    margin-left: 30px;
+}
+
+.main-hr {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    border: 0;
+    background-color: var(--light-blue);
+    margin-top: 0;
+    margin-bottom: 68px;
+}
+
+.hero__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.hero__double-circle {
+    position: absolute;
+    left: calc(50% + 195px);
+    bottom: -98px;
+    z-index: -555;
+}
+
+.why {
+    z-index: 555;
+    background-color: var(--sacramento-state-green);
+}
