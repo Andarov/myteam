@@ -426,7 +426,35 @@ a {
     border-radius: 50%;
 }
 
+/* CTA */
 .cta {
-    z-index: 5555;
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 76px;
     background-color: var(--light--red);
+    z-index: 555;
+}
+
+.cta__bg-img {
+    position: absolute;
+    left: calc(50% - 720px);
+    bottom: -100px;
+}
+
+.cta__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 957px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta__heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+    color: var(--sacramento-state-green);
 }
