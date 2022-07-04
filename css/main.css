@@ -584,7 +584,7 @@ a {
     align-items: flex-start;
 }
 
-.hero__heading {
+.hero__heading--about {
     width: 350px;
     font-size: 64px;
 }
