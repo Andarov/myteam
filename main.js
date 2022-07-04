@@ -2,14 +2,10 @@ const elsTeamBtn = document.querySelectorAll(".team-js-btn");
 const elsTeamContent = document.querySelectorAll(".team__item-content");
 const elsTeamAbout = document.querySelectorAll(".team__item-about");
 
-elsTeamBtn.forEach(function (elTeamBtn) {
-    elTeamBtn.addEventListener("click", function () {
-        elsTeamContent.forEach(function (elTeamContent) {
-            elTeamContent.classList.add("team__item-content--none")
-        });
-        elsTeamAbout.forEach(function (elTeamAbout) {
-            elTeamAbout.classList.remove("team__about--none")
-        });
+elsTeamBtn.forEach(function(item, index) {
+    item.addEventListener('click', function () {
+        elsTeamContent[index].classList.toggle('team__item-content--none')
+        elsTeamAbout[index].classList.toggle('team__about--none')
     });
 });
 
