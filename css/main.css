@@ -320,7 +320,7 @@ a {
     margin: 0;
 }
 
-.feature__green-circle {
+.featureм__green-circle {
     position: absolute;
     left: calc(50% + 618px);
     bottom: 0;
@@ -573,3 +573,36 @@ a {
     color: var(--white);
     opacity: 0.6;
 }
+
+/* About */
+.hero--about {
+    padding-top: 47px;
+    padding-bottom: 120px;
+}
+
+.hero__container--about {
+    align-items: flex-start;
+}
+
+.hero__heading {
+    width: 350px;
+    font-size: 64px;
+}
+
+.hero__content--about {
+    width: 730px;
+}
+
+.main-hr--about {
+    background-color: var(--light--red);
+    margin-bottom: 30px;
+}
+
+.hero__light-circle {
+    position: absolute;
+    left: calc(50% + 619px);
+    bottom: 0;
+    z-index: -555;
+}
+
+
