@@ -320,7 +320,7 @@ a {
     margin: 0;
 }
 
-.featureм__green-circle {
+.feature__green-circle {
     position: absolute;
     left: calc(50% + 618px);
     bottom: 0;
@@ -330,7 +330,7 @@ a {
 .reviews {
     position: relative;
     padding-top: 140px;
-    padding-bottom: 140px;
+    padding-bottom: 150px;
     background-color: var(--reviews-bg);
 }
 
@@ -343,7 +343,7 @@ a {
 .reviews__bg-right {
     position: absolute;
     right: calc(50% - 720px);
-    bottom: -113px;
+    bottom: -100px;
     z-index: 1;
 }
 
@@ -430,7 +430,7 @@ a {
 /* CTA */
 .cta {
     position: relative;
-    padding-top: 86px;
+    padding-top: 76px;
     padding-bottom: 76px;
     background-color: var(--light--red);
     z-index: 555;
@@ -609,21 +609,23 @@ a {
 .team {
     position: relative;
     padding-top: 140px;
-    padding-bottom: 140px;
-    background-color: var(--reviews-bg)
+    padding-bottom: 170px;
+    background-color: var(--reviews-bg);
+    z-index: 555;
 }
 
 .team__bg-left {
     position: absolute;
     top: 0;
     left: calc(50% - 820px);
+    z-index: -555;
 }
 
 .team__bg-right {
     position: absolute;
     right: calc(50% - 720px);
-    bottom: -30px;
-    z-index: 1;
+    bottom: 0;
+    z-index: -333;
 }
 
 .team__heading {
@@ -790,6 +792,50 @@ a {
 
 .team__item-btn-rotate {
     transform: rotate(45deg);
+}
+
+/* Clients */
+.clients {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--sacramento-state-green);
+    z-index: 666;
+}
+
+.clients__circle {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 720px);
+}
+
+.clients__heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -79.5px;
+    margin-bottom: -80px;
+}
+
+.clients__item {
+    margin-left: 79.5px;
+    margin-bottom: 80px;
+}
+
+.clients__item-img {
+    display: block;
 }
 
 
