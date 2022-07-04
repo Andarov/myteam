@@ -66,11 +66,22 @@
 
                 <!-- Contact-form -->
                 <form class="contact__form" action="https://echo.htmlacademy.ru">
-                    <input class="input input--first" type="text" placeholder="Name">
-                    <input class="input" type="email" placeholder="Email Address">
-                    <input class="input" type="text" placeholder="Company Name">
-                    <input class="input" type="text" placeholder="Title">
-                    <textarea class="textarea" name="massage" placeholder="Massage"></textarea>
+                    <input class="contact__input contact__input--first" name="Name" type="text" placeholder="Name" aria-label="name" required>
+                    <div class="contact__error-msg">This field is required</div>
+
+                    <div class="contact__input-wrapper">
+                        <input class="contact__input" name="Email" type="email" placeholder="Email Address" aria-label="email" required>
+                        <div class="contact__error-msg">This field is required</div>
+                    </div>
+
+                    <input class="contact__input contact__company-name" name="Company name" type="text" placeholder="Company Name" aria-label="company name" required>
+                    <div class="contact__error-msg">This field is required</div>
+
+                    <input class="contact__input" name="Title" type="text" placeholder="Title" aria-label="title" required>
+                    <div class="contact__error-msg">This field is required</div>
+
+                    <textarea class="contact__textarea" name="message" placeholder="Message" aria-label="message" required></textarea>
+                    <div class="contact__error-msg">This field is required</div>
 
                     <button class="btn btn--full-white">submit</button>
                 </form>

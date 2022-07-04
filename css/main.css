@@ -916,7 +916,11 @@ a {
     width: 540px;
 }
 
-.input {
+.contact__input-wrapper {
+    position: relative;
+}
+
+.contact__input {
     display: block;
     width: 100%;
     border: none;
@@ -931,7 +935,7 @@ a {
     opacity: 0.6;
 }
 
-.textarea {
+.contact__textarea {
     display: block;
     width: 540px;
     min-height: 108px;
@@ -949,7 +953,7 @@ a {
     margin-bottom: 24px;
 }
 
-.input--first {
+.contact__input--first {
     padding-top: 0;
 }
 
@@ -963,4 +967,31 @@ a {
     position: absolute;
     right: calc(50% - 820px);
     bottom: 0;
+}
+
+.contact__input:valid {
+    color: var(--white);
+    opacity: 1;
+    border-bottom: 2px solid var(--light-blue);
+}
+
+.contact__input:not(:focus):not(:placeholder-shown):invalid {
+    color: var(--light--red);
+	border-bottom: 2px solid var(--light--red);
+}
+
+.contact__input:not(:focus):not(:placeholder-shown):invalid + .contact__error-msg {
+    display: block;
+    position: absolute; 
+    top: calc(100% + 8px);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    padding-left: 14px;
+    color: var(--light--red);
+}
+
+.contact__error-msg {
+    display: none;
 }
