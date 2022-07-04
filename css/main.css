@@ -45,6 +45,15 @@
          url("../fonts/livvic-v13-latin-700.woff") format("woff");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/livvic-v13-latin-700italic.woff2") format("woff2"),
+         url("../fonts/livvic-v13-latin-700italic.woff") format("woff");
+    font-display: swap;
+  }
   
 
 html {
@@ -574,7 +583,7 @@ a {
     opacity: 0.6;
 }
 
-/* About */
+/* About sahifasi*/
 .hero--about {
     padding-top: 47px;
     padding-bottom: 120px;
