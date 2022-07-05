@@ -427,6 +427,7 @@ a {
     margin-top: 0;
     margin-bottom: 24px;
     text-align: center;
+    font-style: italic;
 }
 
 .reviews__item-name {
@@ -676,19 +677,19 @@ a {
 
 .team__item {
     position: relative;
-    width: 350px;
     margin-left: 30px;
     margin-bottom: 76px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--sacramento-state-green);
 }
 
 /* Tab-item-content */
 .team__item-content {
-    width: 302px;
+    width: 350px;
+    height: 253px;
+    background-color: var(--sacramento-state-green);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -755,12 +756,14 @@ a {
 
 /* Back */
 .team__about {
-    width: 302px;
+    width: 350px;
+    height: 253px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 35px 24px 63px;
+    background-color: var(--dark-green);
 }
 
 .team__about--none {
@@ -774,6 +777,7 @@ a {
 .team__about-text {
     text-align: center;
     margin: 0;
+    padding: 0 24px;
     margin-bottom: 24px;
 }
 
