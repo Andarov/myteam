@@ -180,6 +180,8 @@ a {
     padding: 9px 33px 11px 32px;
     transition: color 0.4s ease,
     background-color 0.4s ease;
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 .btn--white {
