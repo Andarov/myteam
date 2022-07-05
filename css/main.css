@@ -73,6 +73,22 @@ html {
     outline-offset: 3px;
 }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid var(--white);
+  -webkit-text-fill-color: var(--white);
+  opacity: 0.6;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -535,14 +551,9 @@ a {
     margin-right: 125px;
 }
 
-.footer__list {
-    display: flex;
-    flex-direction: column;
+.footer__address {
+    font-style: normal;
     opacity: 0.6;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 30px;
 }
 
 /* Footer-right */
