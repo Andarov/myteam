@@ -798,8 +798,6 @@ a {
 }
 
 .team__about-socials-icon {
-    width: 24px;
-    height: 20px;
     color: var(--white);
     transition: color 0.4s ease;
 }
